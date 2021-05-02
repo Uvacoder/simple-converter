@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8 />
+<meta name=viewport content="width=device-width, initial-scale=1" />
+<meta name=theme-color content=#2e393b />
+<meta name=mobile-web-app-capable content=yes />
+<title>Fynks | Tools</title>
+<meta name=robots content=noindex />
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<style>
+    *,*::before,*::after {
+        box-sizing: border-box;
+        text-align: center;
+        text-decoration: none;
+        color: #42bef8
+    }
+
+    html {
+        scroll-behavior: smooth
+    }
+
+    body {
+        background-color: #2e393b
+    }
+    .card {
+        background-color: #485759;
+        box-shadow: 0 .25rem .5rem 0 #00000033;
+        width: 80%;
+        border-radius: 1.875rem;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: .75rem
+    }
+
+    h2 {
+        font-weight: 400
+    }
+    p{
+    margin:2rem;
+    }
+a{
+    border: 0.0625rem solid #42bef8 ;
+    padding:0.5rem;
+    border-radius:2rem ;
+
+}
+
+    @media only screen and (min-width:30rem) {
+        body {
+            margin-top: 4rem
+        }
+
+        .card {
+            width: 60%;
+            margin-bottom: 1.5rem
+        }
+
+        
+    }
+</style>
+</head>
+<body>
+<div class="card">
+<h2>&#x269D; Tools </h2>
+<p><a href="https://fynks.github.io/tools/converter">Converter</a></p>
+
+</div>
+<!-- Service Worker Register -->
+<script>if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('/sw.js'); }); }</script>
+</body>
+</html>
+
